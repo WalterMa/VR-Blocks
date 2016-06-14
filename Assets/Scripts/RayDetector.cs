@@ -4,12 +4,14 @@ using System.Collections;
 public class RayDetector : MonoBehaviour {
 	float lastTime = 0;
 	RaycastHit hitif;
-	GameObject lego;
+	public GameObject lego;
+	public float dectectDistance = 0.1f;
 
 	// Use this for initialization
 	void Start () {
 		lastTime = Time.time;
-		lego = Resources.Load("Square") as GameObject;
+//		lego = Resources.Load("Square") as GameObject;
+
 	}
 	
 	// Update is called once per frame
@@ -18,7 +20,7 @@ public class RayDetector : MonoBehaviour {
 //		Debug.Log ("ray!!");
 
 		float currTime = Time.time;
-		if (myCollider && hitif.distance <= 1.5 && hitif.collider.gameObject.tag == "Lego") {
+		if (myCollider && hitif.distance <= 0.5 && hitif.collider.gameObject.tag == "Lego") {
 			lastTime = currTime;
 			return;
 		}
@@ -28,8 +30,8 @@ public class RayDetector : MonoBehaviour {
 			lastTime = currTime;
 			Debug.Log ("not collided!!");
 			Vector3 position = new Vector3(this.gameObject.transform.position.x,
-				this.gameObject.transform.position.y+1,
-				this.gameObject.transform.position.z+1);
+				(float)(this.transform.position.y+dectectDistance),
+				(float)(this.transform.position.z+dectectDistance));
 			GameObject go = (GameObject)Instantiate(this.lego,position,this.gameObject.transform.rotation);
 			go.tag = "Lego";
 		}
