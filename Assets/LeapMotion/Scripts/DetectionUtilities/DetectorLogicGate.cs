@@ -131,6 +131,7 @@ namespace Leap.Unity {
       }
 
       if(state){
+                Debug.Log("Activate");
         Activate();
       } else {
         Deactivate();
