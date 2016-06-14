@@ -33,6 +33,7 @@ public class RayDetector : MonoBehaviour {
 				(float)(this.transform.position.y+dectectDistance),
 				(float)(this.transform.position.z+dectectDistance));
 			GameObject go = (GameObject)Instantiate(this.lego,position,this.gameObject.transform.rotation);
+            go.SetActive(true);
 			go.tag = "Lego";
 		}
 

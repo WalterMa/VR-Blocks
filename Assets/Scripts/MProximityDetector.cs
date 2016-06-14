@@ -61,6 +61,11 @@ namespace Leap.Unity{
     private IEnumerator proximityWatcherCoroutine;
     private GameObject _currentObj = null;
 
+        public void clearCurrentObj()
+        {
+            _currentObj = null;
+        }
+
     void Awake(){
       proximityWatcherCoroutine = proximityWatcher();
     }
