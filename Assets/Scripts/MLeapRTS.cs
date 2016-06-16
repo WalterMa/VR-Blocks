@@ -61,6 +61,12 @@ namespace Leap.Unity {
             }
         }
 
-    }
+        public void disableControl()
+        {
+            transform.SetParent(_parent);
+            mProximityDetector.TargetObjects.Remove(gameObject);
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        }
 
+    }
 }
