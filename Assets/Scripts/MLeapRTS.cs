@@ -12,16 +12,29 @@ namespace Leap.Unity {
 
     private Transform _parent;
 
+		public void removeFromDetectorList(){
+			if (mProximityDetector != null)
+			{
+				Debug.Log("Cube removed from detector");
+				mProximityDetector.TargetObjects.Remove(this.gameObject);
+			}
+		}
+
+		public void addIntoDetectorList(){
+			if (mProximityDetector != null)
+			{
+				Debug.Log("Cube added into detector");
+				mProximityDetector.TargetObjects.Add(this.gameObject);
+			}
+		}
+
 
    void Awake()
         {
             enabled = false; //disabled, enable by Class: LeapGestureController
-            if (mProximityDetector != null)
-            {
-                Debug.Log("Cube added into detector");
-                mProximityDetector.TargetObjects.Add(this.gameObject);
-            }
+			addIntoDetectorList();
         }
+
 
    void onDestroy()
         {
