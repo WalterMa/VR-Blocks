@@ -38,11 +38,7 @@ namespace Leap.Unity {
 
    void onDestroy()
         {
-                if (mProximityDetector != null)
-                {
-                    Debug.Log("Cube deleted from detector");
-                    mProximityDetector.TargetObjects.Remove(this.gameObject);
-                }
+			removeFromDetectorList ();
         }
 
     void OnEnable()
