@@ -32,6 +32,8 @@ namespace Leap.Unity{
     [Tooltip("The Arraylist of target objects.")]
     public ArrayList TargetObjects = new ArrayList();
 
+		public LeapGestureController GestureController;
+
     /**
      * The distance in meters between this game object and the target game object that
      * will pass the proximity check.
@@ -68,6 +70,10 @@ namespace Leap.Unity{
 
     void Awake(){
       proximityWatcherCoroutine = proximityWatcher();
+
+			if(GestureController != null){
+				TargetObjects = GestureController.TargetObjects;
+			}
     }
 
     void OnEnable () {
@@ -100,7 +106,8 @@ namespace Leap.Unity{
               _currentObj = target;
               proximityState = true;
                             Debug.Log("setTarget");
-                            OnMProximity.Invoke(_currentObj);
+							(_currentObj.GetComponent<Leap.Unity.MLeapRTS> ()).setHandGameObject (gameObject);
+							OnMProximity.Invoke(_currentObj);
               break; // pick first match
             }
           }

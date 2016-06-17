@@ -3,33 +3,34 @@ using System.Collections;
 
 public class LeapGestureController : MonoBehaviour {
 
+	public ArrayList TargetObjects = new ArrayList ();
 
-    private GameObject onGestureObject;
+	private GameObject _targetGameObject;
 
-    public void setTarget(GameObject mGameObject)
+	public void setTarget(GameObject targetGameObject)
     {
-        if (onGestureObject != mGameObject)
+		if (_targetGameObject != targetGameObject)
         {
-            onGestureObject = mGameObject;
+			_targetGameObject = targetGameObject;
         }
     }
 
 
     public void enableLeapRTS()
     {
-        if (onGestureObject != null)
+        if (_targetGameObject != null)
         {
-            (onGestureObject.GetComponent<Leap.Unity.MLeapRTS>()).enabled = true;
-            Debug.Log(onGestureObject.name + " Enabled");
+			(_targetGameObject.GetComponent<Leap.Unity.MLeapRTS> ()).enabled = true;
+            Debug.Log(_targetGameObject.name + " Enabled");
         }
     }
 
     public void disableLeapRTS()
     {
-        if(onGestureObject != null && (onGestureObject.GetComponent<Leap.Unity.MLeapRTS>()).enabled == true)
+        if(_targetGameObject != null)
         {
-            (onGestureObject.GetComponent<Leap.Unity.MLeapRTS>()).enabled = false;
-            onGestureObject = null;
+            (_targetGameObject.GetComponent<Leap.Unity.MLeapRTS>()).enabled = false;
+            _targetGameObject = null;
             Debug.Log("Disabled");
         }
     }

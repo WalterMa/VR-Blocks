@@ -336,15 +336,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 481996, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 481996, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 481996, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.99
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 481996, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -370,6 +370,10 @@ Prefab:
       propertyPath: mProximityDetector
       value: 
       objectReference: {fileID: 1911131071}
+    - target: {fileID: 11445980, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
+      propertyPath: gestureController
+      value: 
+      objectReference: {fileID: 1906387803}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7379513508aaf40e9accc9db731daf8d, type: 2}
   m_IsPrefabParent: 0
@@ -416,6 +420,10 @@ Prefab:
       propertyPath: mProximityDetector
       value: 
       objectReference: {fileID: 1911131071}
+    - target: {fileID: 11429524, guid: 92292c9ab2b52ac438b5abaa34c46aa4, type: 2}
+      propertyPath: gestureController
+      value: 
+      objectReference: {fileID: 1906387803}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92292c9ab2b52ac438b5abaa34c46aa4, type: 2}
   m_IsPrefabParent: 0
@@ -2731,9 +2739,13 @@ Prefab:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11463416, guid: 712cebc09292ddc41b1dfbfcb98af686, type: 2}
+      propertyPath: gestureController
+      value: 
+      objectReference: {fileID: 1906387803}
+    - target: {fileID: 11463416, guid: 712cebc09292ddc41b1dfbfcb98af686, type: 2}
       propertyPath: mProximityDetector
       value: 
-      objectReference: {fileID: 1911131071}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 712cebc09292ddc41b1dfbfcb98af686, type: 2}
   m_IsPrefabParent: 0
@@ -3178,6 +3190,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1550265328}
     m_Modifications:
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: OnMProximity.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 455512, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3224,6 +3240,26 @@ Prefab:
       objectReference: {fileID: 1906387803}
     - target: {fileID: 11448314, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
       propertyPath: gestureController
+      value: 
+      objectReference: {fileID: 1906387803}
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: OnMProximity.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: OnMProximity.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: OnMProximity.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: OnMProximity.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470714, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: GestureController
       value: 
       objectReference: {fileID: 1906387803}
     m_RemovedComponents: []
