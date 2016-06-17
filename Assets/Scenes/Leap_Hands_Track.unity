@@ -186,7 +186,7 @@ Prefab:
     - target: {fileID: 11407370, guid: d5139252bc8c549b385621deba4c28c3, type: 2}
       propertyPath: lego
       value: 
-      objectReference: {fileID: 167914, guid: 712cebc09292ddc41b1dfbfcb98af686, type: 2}
+      objectReference: {fileID: 1149104811}
     - target: {fileID: 106468, guid: d5139252bc8c549b385621deba4c28c3, type: 2}
       propertyPath: m_Name
       value: CubeGenerator
@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gestureController: {fileID: 0}
 --- !u!114 &30174738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,6 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gestureController: {fileID: 0}
 --- !u!114 &287828016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2518,6 +2520,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!1 &1149104811 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167914, guid: 712cebc09292ddc41b1dfbfcb98af686, type: 2}
+  m_PrefabInternal: {fileID: 1310032961}
 --- !u!4 &1151218861 stripped
 Transform:
   m_PrefabParentObject: {fileID: 455512, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
@@ -3017,7 +3023,7 @@ MonoBehaviour:
     modelList: []
     modelsCheckedOut: []
     IsEnabled: 1
-    CanDuplicate: 1
+    CanDuplicate: 0
 --- !u!114 &1550265330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,6 +3100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gestureController: {fileID: 0}
 --- !u!114 &1612922352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3213,6 +3220,10 @@ Prefab:
       objectReference: {fileID: 1906387803}
     - target: {fileID: 11415740, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
       propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1906387803}
+    - target: {fileID: 11448314, guid: b5cd9bc1408419947a8cb6642b316012, type: 2}
+      propertyPath: gestureController
       value: 
       objectReference: {fileID: 1906387803}
     m_RemovedComponents: []
@@ -3682,6 +3693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gestureController: {fileID: 0}
 --- !u!114 &1915732746
 MonoBehaviour:
   m_ObjectHideFlags: 0

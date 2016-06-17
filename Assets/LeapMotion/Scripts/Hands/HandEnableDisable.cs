@@ -19,6 +19,7 @@ namespace Leap.Unity{
   	protected override void HandFinish () {
   		gameObject.SetActive(false);
 			if (gestureController != null) {
+                Debug.Log("000000");
 				gestureController.disableLeapRTS ();
 			}
   	}

@@ -29,8 +29,8 @@ public class RayDetector : MonoBehaviour {
 		if (currTime - lastTime > 0.8) {
 			lastTime = currTime;
 			Debug.Log ("not collided!!");
-			Vector3 position = new Vector3(this.gameObject.transform.position.x,
-				(float)(this.transform.position.y+dectectDistance),
+            Vector3 position = new Vector3(this.gameObject.transform.position.x,
+                lego.transform.localScale.y * 0.5f,
 				(float)(this.transform.position.z+dectectDistance));
 			GameObject go = (GameObject)Instantiate(this.lego,position,this.gameObject.transform.rotation);
             go.SetActive(true);

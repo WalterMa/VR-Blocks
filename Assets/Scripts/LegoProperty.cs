@@ -24,7 +24,6 @@ public class LegoProperty : MonoBehaviour {
         endPosition = end;
         startTime = Time.time;
         journeyLength = Vector3.Distance(startPosition.position, endPosition.position);
-        gameObject.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     void Update()
