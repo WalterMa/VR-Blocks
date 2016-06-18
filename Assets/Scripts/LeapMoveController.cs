@@ -23,5 +23,13 @@ public class LeapMoveController : MonoBehaviour {
         {
             transform.Translate(moveSpeed * Vector3.right * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.R))
+        {
+            transform.Translate(moveSpeed * Vector3.up * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.F))
+        {
+            transform.Translate(moveSpeed * Vector3.down * Time.deltaTime);
+        }
     }
 }
