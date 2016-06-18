@@ -5,7 +5,7 @@ public class LegoProperty : MonoBehaviour {
 
     public enum LegoNameType
     {
-        Cube, Triangle, Sphere, Rectangle
+        Cube, Triangle, Sphere, Rectangle, ShortRectangle, Cylinder
     }
 
     public LegoNameType legoName;

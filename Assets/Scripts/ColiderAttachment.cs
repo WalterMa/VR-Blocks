@@ -29,4 +29,6 @@ public class ColiderAttachment : MonoBehaviour {
             }
         }
     }
+
+    public bool IsAttached() { return isAttached; }
 }
