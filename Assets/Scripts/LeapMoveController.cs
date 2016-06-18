@@ -4,6 +4,11 @@ using System.Collections;
 public class LeapMoveController : MonoBehaviour {
 
     public float moveSpeed = 0.2f;
+
+	private Rigidbody rb;
+	void Start () {
+		rb = GetComponent<Rigidbody> ();
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -32,4 +37,8 @@ public class LeapMoveController : MonoBehaviour {
             transform.Translate(moveSpeed * Vector3.down * Time.deltaTime);
         }
     }
+
+	void FixedUpdate(){
+		rb.velocity = Vector3.zero;
+	}
 }
