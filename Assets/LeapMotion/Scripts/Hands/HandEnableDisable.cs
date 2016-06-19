@@ -6,6 +6,7 @@ namespace Leap.Unity{
   public class HandEnableDisable : HandTransitionBehavior {
 
 		public LeapGestureController gestureController;
+        public LeapCameraMove cameraMove;
     
     protected override void Awake() {
       base.Awake();
@@ -17,12 +18,19 @@ namespace Leap.Unity{
   	}
   
   	protected override void HandFinish () {
-  		gameObject.SetActive(false);
-			if (gestureController != null) {
+            if (gestureController != null)
+            {
                 Debug.Log("Realease Lego");
-				gestureController.disableLeapRTS ();
-			}
-  	}
+                gestureController.disableLeapRTS();
+            }
+            if (cameraMove != null)
+            {
+                Debug.Log("Stop Move");
+                cameraMove.setMoveStop();
+            }
+            gameObject.SetActive(false);
+            
+        }
   	
   }
 }
