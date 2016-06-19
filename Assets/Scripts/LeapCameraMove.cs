@@ -27,17 +27,18 @@ public class LeapCameraMove : MonoBehaviour {
 
     void Update()
     {
-		transform.parent.rotation = transform.rotation;
-		transform.localRotation = Quaternion.identity;
+		Vector3 d;
         switch (_moveState)
         {
             case 0:
                 break;
-            case 1:
-			transform.parent.Translate(MoveSpeed * Vector3.forward * Time.deltaTime);
+		case 1:
+			d = Quaternion.Euler (transform.rotation.eulerAngles) * Vector3.forward;
+			transform.parent.Translate(MoveSpeed *d * Time.deltaTime);
                 break;
             case 2:
-			transform.parent.Translate(MoveSpeed * Vector3.back * Time.deltaTime);
+			d = Quaternion.Euler (transform.rotation.eulerAngles) * Vector3.back;
+			transform.parent.Translate(MoveSpeed * d * Time.deltaTime);
                 break;
             default:
                 break;
