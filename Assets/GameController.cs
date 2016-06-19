@@ -31,6 +31,7 @@ public class GameController : MonoBehaviour {
 		_level1 = GameObject.Instantiate (Level1);
 		_level2 = GameObject.Instantiate (Level2);
 		handAttachment.enabled = true;
+        hideMenu();
 	}
 
 	public void startFreeMode(){
@@ -41,6 +42,7 @@ public class GameController : MonoBehaviour {
 			Destroy (_level2);
 		}
 		handAttachment.enabled = true;
+        hideMenu();
 	}
 
 	public void exitGame(){

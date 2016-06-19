@@ -2165,6 +2165,49 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   filtering: 0.5
+--- !u!1 &619260784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 115564, guid: db18cf5a8240eca4fa782f220e4850dd, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 619260785}
+  - 114: {fileID: 619260789}
+  m_Layer: 0
+  m_Name: PinchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619260785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 427490, guid: db18cf5a8240eca4fa782f220e4850dd, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619260784}
+  m_LocalRotation: {x: -0.009242245, y: -0.075277865, z: -0.99437046, w: -0.07399499}
+  m_LocalPosition: {x: -0.05874023, y: 0.121999994, z: -0.01500956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2117054974}
+  m_RootOrder: 3
+--- !u!114 &619260789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11485026, guid: db18cf5a8240eca4fa782f220e4850dd,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619260784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151c8c2f008764de9a6626d477f47115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 0
+  InTransition: {fileID: 0}
+  OutTransition: {fileID: 0}
 --- !u!1 &620395221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,7 +2753,7 @@ MonoBehaviour:
   Ring: {fileID: 930989318}
   Pinky: {fileID: 2065445131}
   GrabPoint: {fileID: 1811028514}
-  _handedness: 2
+  _handedness: 1
 --- !u!1 &827351684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,7 +3090,7 @@ Transform:
   - {fileID: 228307419}
   - {fileID: 353892414}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &987175598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,49 +3844,6 @@ MonoBehaviour:
   IsActive: 0
   InTransition: {fileID: 0}
   OutTransition: {fileID: 0}
---- !u!1 &1223807694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 144052, guid: db18cf5a8240eca4fa782f220e4850dd, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1223807695}
-  - 114: {fileID: 1223807696}
-  m_Layer: 0
-  m_Name: PinchPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1223807695
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 499830, guid: db18cf5a8240eca4fa782f220e4850dd, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1223807694}
-  m_LocalRotation: {x: -0.009242244, y: -0.07527788, z: -0.99437046, w: -0.07399498}
-  m_LocalPosition: {x: -0.05874023, y: 0.12200001, z: -0.01500957}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2117054974}
-  m_RootOrder: 3
---- !u!114 &1223807696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11481462, guid: db18cf5a8240eca4fa782f220e4850dd,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1223807694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151c8c2f008764de9a6626d477f47115, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsActive: 0
-  InTransition: {fileID: 0}
-  OutTransition: {fileID: 0}
 --- !u!1 &1253691989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,7 +3873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gestureController: {fileID: 1906387803}
+  gestureController: {fileID: 0}
   cameraMove: {fileID: 1953706261}
 --- !u!1 &1259512177
 GameObject:
@@ -6436,7 +6436,7 @@ Transform:
   - {fileID: 202901179}
   - {fileID: 1165668494}
   - {fileID: 372697993}
-  - {fileID: 1223807695}
+  - {fileID: 619260785}
   - {fileID: 1380150558}
   - {fileID: 216792726}
   - {fileID: 1259512178}
@@ -6459,7 +6459,7 @@ MonoBehaviour:
   Palm: {fileID: 202901179}
   Arm: {fileID: 1165668494}
   Thumb: {fileID: 372697993}
-  PinchPoint: {fileID: 1223807695}
+  PinchPoint: {fileID: 619260785}
   Index: {fileID: 1380150558}
   Middle: {fileID: 216792726}
   Ring: {fileID: 1259512178}
