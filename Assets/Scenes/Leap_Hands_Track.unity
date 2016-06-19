@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &30174735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1 &402178325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,6 +1902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!1 &494022203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &587287470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,6 +2922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &753603648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,6 +3189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!1001 &820045314
 Prefab:
   m_ObjectHideFlags: 0
@@ -3352,6 +3358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!224 &861791549 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22454138, guid: 82e5b1e5f4993f846b6d001f963d3cbe,
@@ -4302,6 +4309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!1 &1165668493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +4875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1 &1374242795 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 143596, guid: e83f9f7c35c334c448992b1215571056, type: 2}
@@ -5002,6 +5011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!1 &1376898622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,6 +5100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1 &1380150557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1001 &1489931713
 Prefab:
   m_ObjectHideFlags: 0
@@ -5388,17 +5400,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1953706256}
     m_Modifications:
+    - target: {fileID: 11493962, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
+      propertyPath: Layers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11410040, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11427422, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11427422, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11409506, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -5592,6 +5608,18 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 11493962, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
+      propertyPath: Layers.Array.data[1].LayerTransform
+      value: 
+      objectReference: {fileID: 2109548842}
+    - target: {fileID: 11493962, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
+      propertyPath: Layers.Array.data[1].MaxFloatDistance
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493962, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
+      propertyPath: Layers.Array.data[0].LayerTransform
+      value: 
+      objectReference: {fileID: 2109548842}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82e5b1e5f4993f846b6d001f963d3cbe, type: 2}
   m_IsPrefabParent: 0
@@ -5799,6 +5827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &1591840665 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 126082, guid: 92292c9ab2b52ac438b5abaa34c46aa4, type: 2}
@@ -6267,6 +6296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 4
+  target: {fileID: 0}
 --- !u!1 &1762202969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,6 +6444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1 &1783050056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6596,7 +6627,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1880693565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.5}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 659023666}
@@ -6709,6 +6740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &1905650801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7357,6 +7389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 5
+  target: {fileID: 0}
 --- !u!1 &2015874191
 GameObject:
   m_ObjectHideFlags: 0
@@ -7574,6 +7607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legoName: 2
+  target: {fileID: 0}
 --- !u!1 &2045095301
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,6 +7883,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!224 &2109548842 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22486212, guid: 82e5b1e5f4993f846b6d001f963d3cbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1489931713}
 --- !u!4 &2117054974
 Transform:
   m_ObjectHideFlags: 0
