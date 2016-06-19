@@ -14,7 +14,7 @@ public class LegoProperty : MonoBehaviour {
     private bool finishLerp = false;
     private Transform startPosition;
     private Transform endPosition;
-    public float speed = 1.0f;
+    public float speed = 0.2f;
     private float startTime;
     private float journeyLength;
 
@@ -39,5 +39,5 @@ public class LegoProperty : MonoBehaviour {
         }
     }
 
-    public bool getFinidhLerp() { return finishLerp; }
+    public bool getFinishLerp() { return finishLerp; }
 }
