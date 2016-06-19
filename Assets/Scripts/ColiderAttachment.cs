@@ -5,6 +5,7 @@ public class ColiderAttachment : MonoBehaviour {
 
     public LegoProperty.LegoNameType legoName;
     private bool isAttached = false;
+    public LegoProperty target = null;
 
 	// Use this for initialization
 	void Start () {
@@ -23,12 +24,12 @@ public class ColiderAttachment : MonoBehaviour {
             LegoProperty legoProperty = other.gameObject.GetComponent<LegoProperty>();
             if (legoProperty != null && legoProperty.legoName == legoName)
             {
+                target = legoProperty;
                 other.gameObject.GetComponent<Leap.Unity.MLeapRTS>().disableControl();
                 legoProperty.startLerp(other.gameObject.transform, gameObject.transform);
                 isAttached = true;
             }
         }
     }
-
-    public bool IsAttached() { return isAttached; }
+    
 }

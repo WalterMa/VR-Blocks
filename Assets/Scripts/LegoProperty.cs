@@ -11,6 +11,7 @@ public class LegoProperty : MonoBehaviour {
     public LegoNameType legoName;
 
     private bool isSet = false;
+    private bool finishLerp = false;
     private Transform startPosition;
     private Transform endPosition;
     public float speed = 1.0f;
@@ -28,12 +29,15 @@ public class LegoProperty : MonoBehaviour {
 
     void Update()
     {
-        if (isSet)
+        if (isSet && !finishLerp)
         {
             float distCovered = (Time.time - startTime) * speed;
             float fracJourney = distCovered / journeyLength;
             transform.position = Vector3.Lerp(startPosition.position, endPosition.position, fracJourney);
             transform.rotation = Quaternion.Lerp(startPosition.rotation, endPosition.rotation, fracJourney);
+            if (fracJourney >= 1) finishLerp = true;
         }
     }
+
+    public bool getFinidhLerp() { return finishLerp; }
 }

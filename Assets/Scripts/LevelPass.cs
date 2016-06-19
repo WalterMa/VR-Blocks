@@ -5,6 +5,8 @@ public class LevelPass : MonoBehaviour {
 
     public GameObject[] triggers;
     private bool isPass = false;
+    private float startTime;
+    private Transform startPosition;
 
     // Use this for initialization
     void Start () {
@@ -18,7 +20,7 @@ public class LevelPass : MonoBehaviour {
             isPass = true;
             for(int i = 0; i < triggers.Length; i++)
             {
-                if (!triggers[i].GetComponent<ColiderAttachment>().IsAttached())
+                if (!triggers[i].GetComponent<ColiderAttachment>().target.getFinidhLerp())
                 {
                     isPass = false;
                     break;
@@ -26,8 +28,15 @@ public class LevelPass : MonoBehaviour {
             }
             if (isPass)
             {
-                Destroy(gameObject);
+                startTime = Time.time;
+                startPosition = transform;
             }
         }
-	}
+        if (isPass)
+        {
+            float distCovered = (Time.time - startTime) * 0.2f;
+            float fracJourney = distCovered / 5f;
+            transform.position = Vector3.Lerp(startPosition.position, new Vector3(transform.position.x, -5f, transform.position.z), fracJourney);
+        }
+    }
 }

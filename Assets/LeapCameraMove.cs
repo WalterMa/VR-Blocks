@@ -9,6 +9,7 @@ public class LeapCameraMove : MonoBehaviour {
 
     public void setMoveForward()
     {
+        Debug.Log("GGGGGGGGGG");
         _moveState = 1;
     }
 
